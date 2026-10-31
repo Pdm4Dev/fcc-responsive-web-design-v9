@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: brown;
+    text-align: center;
+    padding: 40px;
+}
+
+.card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px gray;
+    max-width: 400px;
+    margin: 0 auto;
+    transition: transform 0.3s, background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: khaki;
+    transform: scale(1.05);
+}
+
+h1::before {
+    content: "🎉 ";
+}
+
+h1::after {
+    content: " 🎉";
+}
+
+.message {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.card-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-links a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: midnightblue;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+}
+
+.card-links a:hover {
+    background-color: orangered;
+}
+
+.card-links a:active {
+    background-color: midnightblue;
+}
+
+.card-links a:focus {
+    outline: 2px solid yellowgreen;
+}
+
+.card-links a:visited {
+    color: yellowgreen;
+}
+
+section {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+section:hover {
+    transform: skewX(10deg);
+}
+
+section:target {
+    display: block;
+}
+
+
