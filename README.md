@@ -19,8 +19,10 @@ freecodecamp-responsive-web-design/
 │   └── labs/                  # HTML theory exercises and tests
 ├── 02-css/
 │   ├── workshops/             # Hands-on CSS styling workshops
-│   └── labs/                  # CSS layout exercises (Flexbox, Grid, Box Model)
-├── 03-accessibility/          # Web accessibility (a11y) practical labs
+│   ├── labs/                  # CSS styling and layout exercises
+│   └── notes/                 # Theory notes by curriculum topic
+│       └── styling_forms/     # e.g. Markdown notes for Styling Forms
+├── 03-accessibility/          # Web accessibility (a11y) notes and workshops
 ├── 04-certification-projects/ # 5 required projects for the certification
 │   ├── 01-survey-form/
 │   ├── 02-tribute-page/
