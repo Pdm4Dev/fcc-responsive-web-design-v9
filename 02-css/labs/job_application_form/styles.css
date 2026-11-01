@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  label:not(.availability-label) {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  
+  input:not(.availability-radio-btn),
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+
+  input:first-of-type {
+    background-color: #eef7ff;
+  }
+  
+  input:invalid,
+  select:invalid,
+  textarea:invalid {
+    border-color: red;
+  }
+  
+  input:valid,
+  select:valid,
+  textarea:valid {
+    border-color: green;
+  }
+  
+  input:focus,
+  textarea:focus {
+      border-color: yellowgreen;
+      outline: none;
+  }
+  
+  fieldset {
+    padding-bottom: 20px;
+    margin: 20px 0 10px 0;
+  }
+  
+  .availability-radio-btn {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    vertical-align: bottom;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .availability-radio-btn::before {
+    content: " ";
+    display: block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    transform: translate(4px, 4px) scale(0);
+    transition: all 0.1s ease-in;
+  }
+  
+  .availability-radio-btn:checked::before {
+    transform: translate(4px, 4px) scale(1);
+    background-color: green;
+  }
+  
+  .radio-group input[type="radio"]:checked {
+    border-color: green;
+    background-color: green;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .availability-radio-btn:checked + .availability-label {
+    color: green;
+  }
+  
+  button {
+    background-color: green;
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: darkgreen;
+  }
+  
