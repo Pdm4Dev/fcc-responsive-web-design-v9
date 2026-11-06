@@ -1,0 +1,105 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+}
+
+span {
+  display: inline-block;
+}
+
+.table-container {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #a8df8e;
+  font-size: 1.2rem;
+}
+
+span[class="status"] {
+  padding: 4px 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  width: 60%;
+  display: inline-block;
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(to right, #d5fbca, #7b9270);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(to right, #fac3bb, #a1817b);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(to right, #ffefba, #bbaf88);
+}
+
+tr[class="read"] span[class="status"] {
+  background-image: linear-gradient(to right, #98d687, #a8df8e);
+  border: 1px solid #98d687;
+}
+
+tr[class="to-read"] span[class="status"] {
+  background-image: linear-gradient(to right, #f0624d, #f0624d);
+  color: #fff;
+  border: 1px solid #f0624d;
+}
+
+tr[class="in-progress"] span[class="status"] {
+  background-image: linear-gradient(to right, #f5d772, #f5d772);
+  border: 1px solid #f5d772;
+}
+
+span[class="status"],
+span[class^="rate"] {
+  height: 1.4em;
+  width: 6em;
+  padding: 0.2em;
+}
+
+span[class^="rate"] > span {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  height: 100%;
+  width: 20%;
+  margin: 0.2em;
+  background-color: #ddd;
+}
+
+span[class~="one"] :first-child {
+  background-image: linear-gradient(to right, #98d687, #98d687);
+}
+
+span[class~="two"] :nth-child(1), span[class~="two"] :nth-child(2) {
+  background-image: linear-gradient(to right, #f0624d, #f0624d);
+}
+
+span[class~="three"] > span {
+  background-image: linear-gradient(to right, #f5d772, #f5d772);
+}
